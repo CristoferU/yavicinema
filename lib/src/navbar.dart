@@ -1,7 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:jaja/src/ayuda.dart';
+import 'package:jaja/src/cartelera.dart';
 import 'package:jaja/src/login.dart';
 import 'package:jaja/src/otro.dart';
+import 'package:jaja/src/servicios.dart';
 
 
 
@@ -23,32 +26,32 @@ class NavBar extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.person_rounded),
-            title: const Text('Perfil'),
+            leading: const Icon(Icons.movie),
+            title: const Text('Cartelera'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Login()),
+                MaterialPageRoute(builder: (context) => const Cartelera()),
               );
             },
           ),
           ListTile(
-            leading: const Icon(Icons.mark_chat_unread),
-            title: const Text('Subir Mensaje'),
+            leading: const Icon(Icons.movie_creation),
+            title: const Text('Peliculas'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Login()),
+                MaterialPageRoute(builder: (context) => const Servicios()),
               );
             },
           ),
           ListTile(
-            leading: const Icon(Icons.east),
-            title: const Text('Estadistica'),
+            leading: const Icon(Icons.help),
+            title: const Text('Ayuda'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Login()),
+                MaterialPageRoute(builder: (context) => const ayuda()),
               );
             },
           ),
@@ -58,7 +61,7 @@ class NavBar extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const otro()),
+                MaterialPageRoute(builder: (context) => const Otro()),
               );
             },
           ),

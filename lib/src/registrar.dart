@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:jaja/src/lit_starfield_container.dart';
 import 'package:jaja/src/navbar.dart';
 
 
@@ -19,8 +20,10 @@ class _registrarState extends State<registrar> {
         title: const Text('registrar'),
         backgroundColor: const Color.fromARGB(255, 167, 87, 37),
       ),
-      body: Container(
-         color: const Color.fromARGB(255, 228, 226, 225),
+      body: Stack(
+        children:[
+        LitStarfieldContainer(), 
+        Container(
         padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 90.0),
         child: ListView(
           children: <Widget>[
@@ -33,11 +36,11 @@ class _registrarState extends State<registrar> {
             ),
             const Text(
               'registrar',
-              style: TextStyle(fontFamily: 'curisve', fontSize: 50.0),
+              style: TextStyle(fontFamily: 'curisve', fontSize: 50.0,color: Colors.white),
             ),
             const Text(
-              'Ejemplo - 2',
-              style: TextStyle(fontFamily: 'curisve', fontSize: 20.0),
+              'Bien venido ',
+              style: TextStyle(fontFamily: 'curisve', fontSize: 20.0,color: Colors.white),
             ),
             const SizedBox(
               width: 100.0,
@@ -132,8 +135,10 @@ class _registrarState extends State<registrar> {
                 ),
               ],
             ),
-          ],
-        ),
+            ],
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -4,103 +4,56 @@ import 'package:jaja/src/pago.dart';
 
 import 'navbar.dart';
 
-class Servicios extends StatefulWidget {
-  const Servicios({Key? key}) : super(key: key);
+class Cartelera extends StatefulWidget {
+  const Cartelera({Key? key}) : super(key: key);
 
   @override
-  State<Servicios> createState() => _ServiciosState();
+  State<Cartelera> createState() => _CarteleraState();
 }
 
-class _ServiciosState extends State<Servicios> {
-  
+class _CarteleraState extends State<Cartelera> {
   final List<Pet> pets = [
     Pet(
-      name: 'Evil Dead Rise',
-      species: 'Terror',
+      name: 'INDIANA JONES 5',
+      species: 'Aventura',
       age: 18,
-      image: 'images/pelicula1.jpg',
+      image: 'images/cartelera1.jpg',
       description:
-          'En un edificio de apartamentos de Los Ángeles, dos hermanas luchan contra los demonios sedientos de sangre que han salido de un libro antiguo.',
+          'Harrison Ford retoma el papel del legendario héroe arqueólogo en la quinta entrega de la icónica franquicia.',
     ),
     Pet(
-      name: 'Evil Dead Rise',
+      name: 'KRAKENS Y SIRENAS',
+      species: 'Animada',
+      age: 15,
+      image: 'images/Cartelera2.jpg',
+      description:
+          'Es la historia de Ruby Gillman, una Kraken adolescente ( un calamar gigante) que ha ocultado sus poderes como gracias a su familia logra dominar sus poderes y ser una heorina.',
+    ),
+    
+    Pet(
+      name: 'ELEMENTOS',
+      species: 'Animada',
+      age: 15,
+      image: 'images/cartelera3.jpg',
+      description:
+          'Una nueva película original de Disney y Pixar ambientada en Ciudad Elemento, donde conviven los residentes de Fuego, Agua, Tierra y Aire. La historia presenta a Candela, una joven dura, avispada y pasional, cuya amistad con un chico divertido, sensible y que se deja llevar, Nilo, desafía sus creencias sobre el mundo en el que viven.',
+    ),
+    
+    Pet(
+      name: 'HAZME EL FAVOR',
+      species: 'Comedia',
+      age: 15,
+      image: 'images/cartelera4.jpg',
+      description:
+          'Cuando está a punto de perder su casa de la infancia, Maddie descubre un curioso anuncio de trabajo: unos adinerados padres controladores están buscando a alguien que salga con su introvertido hijo de 19 años, Percy, antes de que este vaya a la Universidad. Para su sorpresa, Maddie descubre pronto que la torpeza de Percy no está tan clara.',
+    ),
+    Pet(
+      name: 'NOCHE DEL DEMONIO 5',
       species: 'Terror',
-      age: 18,
-      image: 'images/pelicula1.jpg',
+      age: 12,
+      image: 'images/Cartelera5.jpg',
       description:
-          'En un edificio de apartamentos de Los Ángeles, dos hermanas luchan contra los demonios sedientos de sangre que han salido de un libro antiguo.',
-    ),
-    Pet(
-      name: 'Culpa Mia',
-      species: 'Romance',
-      age: 15,
-      image: 'images/pelicula2.jpg',
-      description:
-          'La joven Noah deja todo para mudarse a la mansión de William Leister, el flamante y rico marido de su madre Rafaela. Allí conoce a Nick, su nuevo hermanastro. Ella no tarda en descubrir que, tras la imagen de hijo modelo, Nick oculta algo.',
-    ),
-    Pet(
-      name: 'Evil Dead Rise',
-      species: 'Terror',
-      age: 18,
-      image: 'images/pelicula1.jpg',
-      description:
-          'En un edificio de apartamentos de Los Ángeles, dos hermanas luchan contra los demonios sedientos de sangre que han salido de un libro antiguo.',
-    ),
-    Pet(
-      name: 'Culpa Mia',
-      species: 'Romance',
-      age: 15,
-      image: 'images/pelicula2.jpg',
-      description:
-          'La joven Noah deja todo para mudarse a la mansión de William Leister, el flamante y rico marido de su madre Rafaela. Allí conoce a Nick, su nuevo hermanastro. Ella no tarda en descubrir que, tras la imagen de hijo modelo, Nick oculta algo.',
-    ),
-    Pet(
-      name: 'Ghosted',
-      species: 'Acción/Romance',
-      age: 15,
-      image: 'images/pelicula3.jpg',
-      description:
-          'Cole se enamora perdidamente de la enigmática Sadie, pero descubre que es una agente secreta. Antes de que puedan decidir una segunda cita, Cole y Sadie se ven arrastrados a una aventura internacional para salvar el mundo.',
-    ),
-    Pet(
-      name: 'Evil Dead Rise',
-      species: 'Terror',
-      age: 18,
-      image: 'images/pelicula1.jpg',
-      description:
-          'En un edificio de apartamentos de Los Ángeles, dos hermanas luchan contra los demonios sedientos de sangre que han salido de un libro antiguo.',
-    ),
-    Pet(
-      name: 'Ghosted',
-      species: 'Acción/Romance',
-      age: 15,
-      image: 'images/pelicula3.jpg',
-      description:
-          'Cole se enamora perdidamente de la enigmática Sadie, pero descubre que es una agente secreta. Antes de que puedan decidir una segunda cita, Cole y Sadie se ven arrastrados a una aventura internacional para salvar el mundo.',
-    ),
-    Pet(
-      name: 'Evil Dead Rise',
-      species: 'Terror',
-      age: 18,
-      image: 'images/pelicula1.jpg',
-      description:
-          'En un edificio de apartamentos de Los Ángeles, dos hermanas luchan contra los demonios sedientos de sangre que han salido de un libro antiguo.',
-    ),
-    Pet(
-      name: 'Culpa Mia',
-      species: 'Romance',
-      age: 15,
-      image: 'images/pelicula2.jpg',
-      description:
-          'La joven Noah deja todo para mudarse a la mansión de William Leister, el flamante y rico marido de su madre Rafaela. Allí conoce a Nick, su nuevo hermanastro. Ella no tarda en descubrir que, tras la imagen de hijo modelo, Nick oculta algo.',
-    ),
-    Pet(
-      name: 'Ghosted',
-      species: 'Acción/Romance',
-      age: 15,
-      image: 'images/pelicula3.jpg',
-      description:
-          'Cole se enamora perdidamente de la enigmática Sadie, pero descubre que es una agente secreta. Antes de que puedan decidir una segunda cita, Cole y Sadie se ven arrastrados a una aventura internacional para salvar el mundo.',
+          'Para enterrar sus demonios de una vez por todas, Josh Lambert y un ya universitario Dalton Lambert, deberán profundizar en El Mas Allá más que nunca, enfrentándose al oscuro pasado familiar y a un huésped de nuevos horrores terroríficos que acechan tras la puerta roja.',
     ),
     Pet(
       name: 'Culpa Mia',
@@ -163,14 +116,14 @@ class _ServiciosState extends State<Servicios> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+ debugShowCheckedModeBanner: false,
       home: Scaffold(
         drawer: const NavBar(),
         appBar: AppBar(
-          title: const Text('Pelicula'),
+          title: const Text('Cartelera'),
           backgroundColor: const Color.fromRGBO(18, 130, 178, 1),
-        ), 
-       body: Stack(
+        ),
+      body: Stack(
         children: [
           LitStarfieldContainer(), // Colocar LitStarfieldContainer() como fondo
           ListView.builder(
@@ -201,6 +154,7 @@ class _ServiciosState extends State<Servicios> {
     ));
   }
 }
+
 class Pet {
   final String name;
   final String species;
