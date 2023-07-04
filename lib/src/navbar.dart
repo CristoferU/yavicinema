@@ -4,7 +4,7 @@ import 'package:jaja/src/ayuda.dart';
 import 'package:jaja/src/cartelera.dart';
 import 'package:jaja/src/login.dart';
 import 'package:jaja/src/otro.dart';
-import 'package:jaja/src/servicios.dart';
+import 'package:jaja/src/proximamente.dart';
 
 
 
@@ -31,17 +31,17 @@ class NavBar extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Cartelera()),
+                MaterialPageRoute(builder: (context) => PopularMoviesScreen()),
               );
             },
           ),
           ListTile(
             leading: const Icon(Icons.movie_creation),
-            title: const Text('Peliculas'),
+            title: const Text('Proximamente'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Servicios()),
+                MaterialPageRoute(builder: (context) =>  MoviesScreen()),
               );
             },
           ),

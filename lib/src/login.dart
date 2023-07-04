@@ -116,7 +116,7 @@ class _LoginState extends State<Login> {
                     onPressed: _canLogin
                         ? () {
                             // Navegar a la pantalla de registro
-                            Navigator.pushNamed(context, '/servicios');
+                            Navigator.pushNamed(context, '/cartelera');
                           }
                         : null,
                     child: const Text('Iniciar sesión'),
